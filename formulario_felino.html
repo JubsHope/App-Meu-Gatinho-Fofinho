@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>
+           Formulario Felino
+        </title>
+        <meta charset="UTF-8">
+        <meta name="autor" content="JubsHope">
+        <meta name="assunto" content="Formulario de pesquisa sobre gatos"> 
+        <link rel="icon" href="/img/1f63b.png">
+        <link rel="stylesheet" href="estilos.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Formulário Felino</h1>
+            <nav aria-label="navegação primária">
+                <ul>
+                <li>
+                   <a href="/Index.html">Home</a> 
+                </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#fatos">Fatos sobre Gatos</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+          <article id="formulário">
+                <h2>Formulário Felino</h2>
+                <p>Responda essa pesquisa e nos ajude a entender mais sobre esses bichinhos lindos!</p>
+                <p>PS.: Se você quiser, pode anexar uma foto do seu gato para fazer parte de nossa galeria.</p>
+                <form action="https://www.freecatphotoapp.com/submit-cat-photo"></form>
+                <fieldset>
+                    <legend>
+                        Informações sobre seu gato:
+                    </legend>
+                    <label for="nomeGato">Qual o nome do seu gato?</label>
+                    <input type="text" name="nomeGato" id="nomeGato" placeholder="Bicudo" autocomplete="on" required autofocus>
+                    <br>
+                    <label for="idadeGato">Qual a idade do seu gato?</label>
+                    <input type="number" name="idadeGato" id="idadeGato" min="1" max="30" value="1">
+                    <br>
+                    <label for="quantosGatos">Quantos gatos você tem?</label>
+                    <input type="number" name="quantosGatos" id="quantosGatos" min="1" max="50" value="1">
+                    <br>
+                    <p>Seu(s) gato(s) fica(m) dentro de casa ou tem acesso à rua?</p>
+                    <p>
+                      <input type="radio" name="casaRua" id="casa" value="casa">
+                      <label for="casa">Fica em casa.</label>  
+                    </p>
+                    <p>
+                      <input type="radio" name="casaRua" id="Rua" value="Rua">
+                      <label for="casa">Sai pra rua.</label>  
+                    </p>
+                    <p>Qual a personalidade do seu gato?</p>
+                    <input type="checkbox" name="personalidade" id="manhoso">
+                    <label for="manhoso">Manhoso</label>
+                    <br>
+                    <input type="checkbox" name="personalidade" id="Preguiçoso">
+                    <label for="Preguiçoso">Preguiçoso</label>
+                    <br>
+                    <input type="checkbox" name="personalidade" id="Arisco">
+                    <label for="Arisco">Arisco</label>
+                    <br>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Seu gato na nossa galeria!</legend>
+                    <p>Anexe uma foto para nossa equipe adicionar na galeria.</p>
+                    <input type="file" name="anexoFoto" id="anexoFoto">
+                    <p>
+                        <label for="mensagem">Legenda da foto</label>
+                    </p>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Insira a legenda da sua foto aqui."></textarea>
+
+                </fieldset>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Redefinir</button>
+          </article> 
+        <hr>
+        <p><a href="/formulario_felino.html">Voltar ao topo</a></p>
+        </main>
+        <footer>
+            <p>   &lt; &copy; Copyright App Meu Gatinho Fofinho &gt;</p>
+        </footer>
+    </body>
+</html>
